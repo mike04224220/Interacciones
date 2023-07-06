@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    font-family: 'Roboto Slab', serif;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    text-align:center;
+    background: url("../img/itachi.jpg");
+    background-size: 100%;
+}
+
+body.img-2{
+    background: url("../img/itachii.webp");
+    background-size: cover ;
+}
+
+#interaciones{
+    font-weight: 500;
+    font-size: 25px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px;
+    background: #3445dd44 ;
+    border-radius: 8px;
+    border: 4px ridge #3d0d49;
+}
+
+#interaciones h2{
+    color: rgb(226, 23, 23);
+}
+
+#interaciones button{
+    background: #2c0cbdcb;
+    color: rgb(236, 88, 88);
+    border-radius: 40%;
+    border-color: #3d0d49;
+    padding: 8px 12px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+#contorno{
+    width: 90%;
+    margin: 0 auto ;
+    padding: 30px;
+    background: #0000004f ;
+    border-radius: 8px;
+    border: 2px solid #fff;
+}
+
+#imagen{
+    width: 90%;
+    margin: 0 auto ;
+    padding: 30px;
+    background: #0000004f ;
+    border-radius: 8px;
+    border: 2px solid #fff;
+}
+
+#figura{
+    width: 300px;
+    height: 300px;
+    background: rgb(169, 103, 230);
+    margin: 20px auto;
+    transition: 1s;
+}
+
+
+#figura.rectangulo {
+    width: 600px;
+    height: 150px;
+    background: rgb(186, 223, 20);
+    transition: 1s;
+    border: 1px solid rgb(186, 223, 20);
+    border-radius: 0%;
+    transform: rotate(-360deg);
+}
+
+#figura.rombo {
+    width: 200px;
+    height: 200px;
+    background: #320b52;
+    transform: rotate(45deg);
+}
+
+#figura.circulo {
+    transform: rotate(-360deg);
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    border-radius: 50%;
+    background: rgb(9, 29, 94);
+}
+
+#figura.triangulo {
+    width: 0;
+    height: 0;
+    border-radius: none;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid red;
+    background: transparent;
+    transform: rotate(360deg);
+}
+
+
+#figura.degradado {
+    background-image: linear-gradient(to bottom right, #4049c5, #af23c2);
+}
+
+#figura {
+    width: 200px;
+    height: 200px;
+    background-color: #cc2a2a;
+    position: relative;
+    overflow: hidden;
+}
+
+#figura.ondas::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #3a14e4;
+    transform: scale(1.5);
+    animation: ondas 3s linear infinite;
+}
+
+@keyframes ondas {
+    0% {
+        transform: scale(1.5);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(3);
+        opacity: 0;
+    }
+}
+
+#imagen.gif {
+    background-image: url('/img/trpi.gif'); 
+    width: 100%;
+    background-position: center;
+}
+
+#panelLateral {
+    width: 400px;
+    height: 800px;
+    position: absolute;
+    left: -400px;
+    top: 0;
+    background:#00c8ff;
+    z-index: 999;
+    padding-top: 150px;
+    padding-left: 40px;
+    transition: .5s;
+}
+#panelLateral.activo{
+    left: 0;
+}
+
+#panelLateral a{
+    display: block;
+    padding: 20px;
+    width: 220px;
+    background: rgb(34, 27, 27);
+    color: #79001a;
+    margin: 5px 0;
+    text-decoration: none;
+}
+
+#panelLateral .close{
+    position: absolute;
+    right: 40px;
+    color: #79001a;
+    font-size: 30px;
+    text-decoration: none;
+    background: transparent;
+    border: 0;
+}
+
+#panelSuperior {
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    top: -250px;
+    left: 0;
+    background: #00c8ff;
+    z-index: 999;
+    padding-top: 20px;
+    padding-left: 40px;
+    transition: .5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#x {
+    width: 5%;
+    height: 5%;
+}
+
+#panelSuperior.activo {
+    top: 0;
+}
+
+#panelSuperior iframe {
+    width: 200px;
+    max-height: 200px; 
+}
+
+#panelSuperior h3 {
+    color: #a25be9;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#panelSuperior a {
+    display: block;
+    padding: 20px;
+    width: 220px;
+    background: rgb(34, 27, 27);
+    color: #79001a;
+    margin: 5px 0;
+    text-decoration: none;
+}
+
+#panelSuperior .close {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    color: #79001a;
+    font-size: 30px;
+    text-decoration: none;
+    background: transparent;
+    border: 0;
+}

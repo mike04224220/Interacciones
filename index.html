@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Interaciones</title>
+        <link rel="stylesheet" href="css/slyles.css">
+    </head>
+    <body id="body">
+        <section id="interaciones">
+            <h2>INTERACIONES HTML - CSS - JS<h2>
+            <br>
+            <button onclick="fondo_body()">Fondo</button>
+            <button onclick="panel_superior()">Panel Superior</button>
+            <button onclick="panel_lateral()">Panle Lateral</button>
+            <button onclick="ondas()">Ondas</button>
+            <button onclick="desgradado()">Degradado</button>
+            <button onclick="rectangulo()">Rectángulo</button>
+            <button onclick="rombo()">Rombo</button>
+            <button onclick="triangulo()">Triangulo</button>
+            <button onclick="circulo()">Circulo</button>
+            <button onclick="gif()">GIF</button>
+        </section>
+
+        <section id="contorno">
+            <div id="figura"></div>
+        </section>
+
+        <section id="imagen">
+            <img src="img/trpi.gif" width="50%">
+        </section>
+        <div id="panelLateral">
+            <button class="close" onclick="panel_lateral()" ><img id="x" src="img/charingan.png" alt=""></button>
+            <h3>Menú</h3>
+            <ul>
+                <a href="#">Inicio</a>
+                <a href="#">Gestor</a>
+                <a href="#">Localizaodr</a>
+                <a href="#">Catalogo</a>
+                <a href="#">Inventarios</a>
+            </ul>
+        </div>
+        <div id="panelSuperior">
+            <button class="close" onclick="panel_superior()" ><img id="x" src="img/charingan.png" alt=""></button>
+            <ul>
+                <a href="#">Log in</a>
+                <a href="#">Upate</a>
+                <a href="#">Log out</a>
+            </ul>
+            <iframe width="100%" height="1000" src="https://www.youtube.com/embed/E0ozmU9cJDg" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen></iframe>
+        </div>
+        
+        <script src="js/script.js"></script>
+    </body>
+</html>
